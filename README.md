@@ -1,2 +1,2 @@
 # K-Nearest-Neighbours
-<img src="knn.gif" width="40" height="40" />
+<img src="https://github.com/asbird/K-Nearest-Neighbours/blob/master/KNN.gif" width="40" height="40" />
