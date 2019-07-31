@@ -1,2 +1,2 @@
 # K-Nearest-Neighbours
-![Alt Text](<img src="KNN.gif" width="40" height="40" />)
+<img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" width="40" height="40" />
