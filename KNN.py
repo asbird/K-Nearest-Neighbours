@@ -2,16 +2,11 @@ import numpy as np
 import pdb
 import matplotlib.pyplot as plt
 from matplotlib import style
-import time
 import itertools
 import math
 from collections import Counter
 import KNN_visualizations as KNNV
-from matplotlib.animation import FuncAnimation
-from celluloid import Camera
-
 style.use('fivethirtyeight')
-
 
 def main():
     data = {
@@ -30,9 +25,7 @@ def main():
     # Run KNN Algorithm
     K_Nearest(data, y, k, fig)
     plt.show()
-
-
-    # pdb.set_trace()
+    
 def K_Nearest(data, X, k, fig):
     for x in X:
         # List without shape value on [1] can throw error
@@ -82,7 +75,6 @@ def K_Nearest(data, X, k, fig):
         plt.clf()
         KNNV.scatter_data_points(data)
 
-
 def assign_to_group(pt, euclidList, data, k):
     """
         Assigns given point to the group with highest frequency of K points
@@ -95,14 +87,11 @@ def assign_to_group(pt, euclidList, data, k):
                     votes.append(key)
     return max(set(votes), key = votes.count)
 
-
 def euclidean_dist(point, pt):
     sum = 0
     for q,p in zip(point, pt):
         sum+=(q-p)**2
     return math.sqrt(sum)
-
-
 
 if __name__ == '__main__':
     main()
